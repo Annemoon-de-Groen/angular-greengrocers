@@ -3,3 +3,8 @@ export interface Item {
   name: string;
   price: number;
 }
+
+export type CartItem = {
+  item: Item;
+  quantity: number;
+}
