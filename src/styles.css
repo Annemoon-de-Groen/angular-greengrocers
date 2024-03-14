@@ -187,3 +187,17 @@ app-total {
     border-bottom: 2px solid #00675b;
   }
 }
+
+.sortButtons {
+  display: grid;
+  grid-template-columns: repeat(2, 125px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.filterButtons {
+  display: grid;
+  grid-template-columns: repeat(3, 125px);
+  grid-gap: 10px;
+  justify-content: center;
+}

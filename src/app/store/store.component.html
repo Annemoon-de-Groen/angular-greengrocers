@@ -1,5 +1,14 @@
+<div class="filterButtons">
+    <button (click)="getFilteredList('')">Show All</button>
+    <button (click)="getFilteredList('fruit')">Fruit</button>
+    <button (click)="getFilteredList('vegetable')">Vegetables</button>
+</div>
+<div class="sortButtons">
+    <button (click)="sortList('price')">Sort by price</button>
+    <button (click)="sortList('name')">Sort by name</button>
+</div>
 <ul class="item-list store--item-list">
-    <li *ngFor="let item of items | async">
+    <li *ngFor="let item of filteredList | async">
         <div class="store--item-icon">
             <img [src]="getImage(item.id)" alt="beetroot" />
         </div>
